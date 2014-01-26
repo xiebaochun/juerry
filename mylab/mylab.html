@@ -14,23 +14,75 @@
       <div id="header">
         <img id="logo" src="../images/logo.png"></img>
                                    <!-----------------导航栏------>
-        <nav id="header_nav">
+        <div id="header_nav">
           <li><a id="navText" href="http://www.juerry.com">首页</a></li>
           <li><a id="navText" href="../../myOffice.html">实验室</a></li>
-          <li><a id="navText" href="https://github.com/">博客</a></li>
-        </nav>
+          <li><a id="navText" href="../myblog/index.html">博客</a></li>
+        </div>
 
       </div>
 
 
       <div id="content_mylab">
-        <p>实验项目</p>
-        <nav id="left_nav">
-          <li><a href="TextEditor/index.html">HTML5记事本</a></li>
-          <li><a href="minigame/minigame.html">迷你游戏</a></li>
-          <li><a href="hitmolegame.html">打地鼠游戏</a></li>
-          <li><a href="particle/particle.html">粒子系统</a></li>
-        </nav>
+        <div id="left_panel">
+          <div style="height:20px;background:#222;margin-top:20px;"></div>
+          <p style="background:#ffaa00;text-align:center;padding:10px;color:#005500;font-size:20px;font-weight:bolder;border-radius:10px;top:20px;margin:5px;">实验分类：</p>
+          <nav>
+            <UL>
+             <li class="var_nav">
+                <div class="link_bg"></div>
+                <div class="link_title">
+                  <div class=icon> 
+                  <i class="icon-mobile-phone icon-2x"></i>
+                  </div>
+                  <a href="#"><span>页面设计</span></a>
+                </div>
+             </li>
+             <li class="var_nav">
+                <div class="link_bg"></div>
+                <div class="link_title">
+                  <div class=icon> 
+                  <i class="icon-lightbulb icon-2x"></i>
+                  </div>
+                  <a href="#"><span>CSS3设计</span></a>
+                </div>
+             </li>
+             <li class="var_nav">
+                <div class="link_bg"></div>
+                <div class="link_title">
+                  <div class=icon> 
+                  <i class="icon-wrench icon-2x"></i>
+                  </div>
+                  <a href="#"><span>HTML5游戏</span></a>
+                </div>
+             </li>
+             <li class="var_nav">
+                <div class="link_bg"></div>
+                <div class="link_title">
+                  <div class=icon> 
+                  <i class="icon-briefcase icon-2x"></i>
+                  </div>
+                <a href="#"><span>HTML5应用</span></a>
+                </div>
+             </li>
+             <li class="var_nav">
+                <div class="link_bg"></div>
+                <div class="link_title">
+                  <div class=icon> 
+                  <i class="icon-briefcase icon-2x"></i>
+                  </div>
+                <a href="#"><span>jQuery插件</span></a>
+                </div>
+             </li>
+            </UL>
+          </nav>
+          <!-- <nav>
+            <li><a href="TextEditor/index.html">HTML5记事本</a></li>
+            <li><a href="minigame/minigame.html">迷你游戏</a></li>
+            <li><a href="hitmolegame.html">打地鼠游戏</a></li>
+            <li><a href="particle/particle.html">粒子系统</a></li>
+          </nav> -->
+        </div>
 
           <br/>
           <p1>download the 迷你游戏</p1> <br> <br>
@@ -38,7 +90,7 @@
       </div>
 
       <footer>
-        <p>copyright by 前端艺术</p>
+        <p style="font-size:10px;">copyright by 前端艺术</p>
       </footer>
     </div>
     <script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>

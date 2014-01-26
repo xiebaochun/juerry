@@ -1,0 +1,42 @@
+html{
+
+}
+body{
+	background: #eee;
+	margin:0px;
+}
+.logo{
+	height:150px;
+}
+nav{
+	background: #fefefe;
+	text-align:center;
+}
+nav li{
+	padding:35px;
+	display: block;
+	text-decoration: none;
+	border-bottom:1px dashed #660034;
+
+}
+nav li a{
+   text-decoration: none;	
+   font-size:40px;
+}
+nav li:hover{
+	background: #aa6;
+}
+.arrow{
+	margin-left:30px;
+	display: inline-block;
+	height:0px;
+	width: 0px;
+	/*background: #333;*/
+	border-top:10px solid transparent;
+	border-bottom:10px solid transparent;
+	border-left:50px solid #0ff;
+
+	transform:rotateX(1deg);
+    -webkit-transform:rotateX(1deg);
+
+}
