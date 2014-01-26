@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="baidu-site-verification" content="b21iGQpXRD" />
+<meta property="wb:webmaster" content="d2631fcf84100f3f" />
+<link rel="stylesheet" href="index.css" type="text/css">
+<script type="text/javascript" src="http://mat1.gtimg.com/app/vt/js/read/import.js" charset="utf-8"></script>
+<title>juerry、前端、艺术|HTML5、摄影、航拍</title>
+</head>
+<body>
+<div id="title">
+<img id="logo" src="images/logo.png"></img>
+<!-----------------导航栏------>
+<nav>
+<li><a id="navText" href="http://www.juerry.com">首页</a></li>
+<li><a id="navText" href="myOffice.html">工作室</a></li>
+<li><a id="navText" href="blog.php">博客</a></li>
+<!--<li><a id="navText" href="09fangshe(1).html">09纺设（1）相册</a></li>
+-->
+</nav>
+</div>
+
+<!---------------------------------腾讯微博账号登陆------------------------------------->
+
+<div id="tencent">
+<!doctype html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>腾讯微博登录组件</title>
+<style type="text/css">
+.login_btn{display:inline-block;background-repeat:no-repeat;font-size:12px;text-decoration:none;color:#055675;}
+.login_btn00{width:230px;height:48px;background-image:url(http://mat1.gtimg.com/app/opent/images/websites/login/login_icon_1.png);}
+.login_btn01{width:170px;height:32px;background-image:url(http://mat1.gtimg.com/app/opent/images/websites/login/login_icon_2.png);}
+.login_btn02{width:120px;height:24px;background-image:url(http://mat1.gtimg.com/app/opent/images/websites/login/login_icon_3.png);}
+.login_btn03{width:105px;height:16px;background-image:url(http://mat1.gtimg.com/app/opent/images/websites/login/login_icon_4.png);}
+        .login_btn10{padding-left:20px;background-image:url(http://mat1.gtimg.com/app/opent/images/websites/share/weiboicon16.png);}
+        .login_btn20{}
+        img{border:none;vertical-align:middle;}
+        .logout_btn{display:none;margin:0px;padding:0px;font-size:12px;line-height:1.75;font-family:Arial,Helvetica,sans-serif;vertical-align:middle;color:rgb(100,100,100,);}
+        .head_img{display:inline-block;vertical-align:middle;}
+        .head_img img{vertical-align:middle;}
+        .logout_right{display:inline-block;vertical-align:middle;}
+        .nick_text{display:inline-block;margin-left:4px;text-decoration:initial;color:rgb(0,120,182);}
+        .logout_text{margin-left:5px;vertical-align:middle;text-decoration:initial;color:rgb(153,153,153);cursor:pointer;}
+      </style>
+      <script src="http://mat1.gtimg.com/app/openjs/openjs.js"></script>
+    </head>
+    <body>
+      <div class="qq_account_log" id="qq_account_log">
+        <a class="login_btn login_btn02" id="login_btn" href="javascript:;">
+        </a>
+        <div class="logout_btn" id="logout_btn"></div>
+</div>
+<script defer="defer">
+var login_btn = document.getElementById("login_btn"),
+logout_btn = document.getElementById("logout_btn");
+function login(){
+T.login(function(loginStatus){
+getUserInfo();
+login_btn.style.display = "none"
+logout_btn.style.display = "inline-block";
+},function(loginError){
+alert(loginError.message);
+});
+}
+function logout(){
+logout_btn.style.display = "none";
+login_btn.style.display = "inline-block";
+T.logout();
+}
+function getUserInfo(){
+T.api("/user/info")
+.success(function(response){
+if(response.ret === 0){
+var html="",imgsrc="",data=response.data;
+html = '<a class="head_img" href="http://t.qq.com/'+ data.name +'" target="_blank"><img src="'+ imgsrc +'" /></a><span class="logout_right"><a class="nick_text" href="http://t.qq.com/' + data.name +'" target="_blank" title="'+data.nick +'">'+ data.nick +'</a><a class="logout_text" id="logout_text"　href="javascript:void(0);">退出</a></span>';
+logout_btn.innerHTML = html;
+var logout_text = document.getElementById("logout_text");
+logout_text.onclick = logout;
+}else{
+              alert(response.ret);
+}
+})
+.error(function(code,message){
+alert(message);
+});
+}
+function init(){
+T.init({appkey:801395296});
+if(!T.loginStatus()){
+login_btn.style.display = "inline-block";
+logout_btn.style.display = "none";
+}else{
+getUserInfo();
+login_btn.style.display = "none";
+logout_btn.style.display = "inline-block";
+}
+login_btn.onclick = login;
+}
+init();
+</script>
+</body>
+</html>
+</div>
+<!------------------------------------腾讯阅读墙-----------------------------------
+-->
+<div id="container">
+<iframe width="100%" height="100% frameborder="0" ;" allowtransparency="true" src="about:blank" id="txwbydq_01" srcolling="no"></iframe> <script type="text/javascript">window.showTxWbYDQ(document.getElementById("txwbydq_01"), {"width":"100%","height":"100%","appkey":"801395312","theme":0,"nobg":0,"ModuleConfigure":{"TitleModule":1,"PubModule":1,"TabModule":1,"TimelineModule":1},"TimelineDetail":{"HeadStyle":1,"PageStyle":0,"PicStyle":0,"TwitterNum":20},"PubModuleConfigure":{"InitialContent":"#阅读墙测试# 说点什么吧","InsertFunction":[0,1,2],"SourceUrl":"http://dev.t.qq.com/websites/read/","position":0},"TitleModuleConfigure":{"OfficialAccount":"api_weibo"},"TimelineModuleConfigure":[{"Condition":["腾讯","微博","开放平台"],"ConditionType":1,"ContentType":0,"Famous":0,"MessageType":1,"Name":"腾讯微博开放平台","SortType":0}],"filter":"null"} , function(d){/*回调函数,d的值格式为：{"action":"发表","ret":0,"errcode":0,"msg":"ok","data":{"id":231174038614579,"time":1371544700}},其中action的值可能为"发表、转播、评论"*/} );</script>
+<div id="tencent_readWall">
+
+
+<!---------------------腾讯微博评论
+--><div id="qqwb_comment__" data-appkey="801395315" data-width="300" data-height="550"></div>
+<!--<script src="http://mat1.gtimg.com/app/openjs/openjs.js#debug=yes&autoboot=no"></script>
+--></div>
+
+
+<!-------------------------------------腾讯微博分享------------------------------------->
+<!--<div id="qqwb_share__" data-appkey="801395300" data-icon="1" data-counter="1" data-counter_pos="top" data-content="{the}" data-richcontent="{fenxiang}|{fengxiang}|{line3}" data-pic="{pic}"></div>-->
+<div id="content"></div>
+
+<div id="footer">
+<h5 id="footer_text">CopyRight By <a href="http://www.juerry.com">Juerry</a></h5>
+</div>
+</div>
+
+
+
+
+<script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
+
+</body>
+
+<!doctype html>
+
