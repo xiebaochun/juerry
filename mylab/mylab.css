@@ -11,12 +11,11 @@ body{
 	background: #231000;
 }
 #header{
-  background: #995656;
+  background: #ccc;
   height:200px;
-  border-bottom:3px solid #661255;
+  border-bottom:1px solid #a02;
+  border-top:1px solid #d09;
 }
-
-
 #logo{
 	position: absolute;
 	top: 0px;
@@ -26,26 +25,35 @@ body{
 	/*background: #33363b;*/
 	display: block;
 }
+#drag_ctr{
+	position: absolute;
+	top:0px;
+	left:10px;
+	width:80px;
+	height:40px;
+	background: rgba(240,27,107,0.1);
+}
 #header_nav{
-  position: absolute;
+  position:absolute;
   top:150px;
-  left:40%;
+  left:42%;
+  padding:10px;
   display: inline;
-  border:1px solid rgba(0,0,0,0.1);
-  border-radius: 5px;
-  -webkit-box-shadow:1px 3px 5px 3px rgba(200,150,150,0.3);
+  border:1px solid rgba(240,0,0,0.1);
+  border-radius: 1px;
+ /* -webkit-box-shadow:1px 3px 5px 3px rgba(200,150,150,0.3);*/
   background: rgba(200,200,200,0.3);
 }
 #header_nav li{
   display: inline;
-  font-size: 26px;
+  /*color:#fff;*/
+  font-size: 16px;
   padding: 10px;
   margin:5px;
   
 }
 #header_nav li a{ 
   color:#fff;
-  padding: 10px;
   margin:10px;
   text-decoration: none;	
 }
@@ -76,11 +84,11 @@ footer{
     background: #fff;
     height:100px;
     width: 100%; 
-    border-top:5px solid #661255;
+    border-top:1px solid #991255;
 }
 footer p{
 	/*position: absolute;*/
-	margin-left:45%;
+	margin-left:42%;
 	margin-top:0px;
 	padding-top:45px;
 }
@@ -97,6 +105,7 @@ background:#ccc;
 width:300px;
 height:70px;
 margin-bottom:5px;
+/*opacity: 0.5;*/
 }
 .link_bg
 {

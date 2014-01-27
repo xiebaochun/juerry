@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="mylab.css" type="=text/css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript" src="../index.js" charset="utf-8"></script>
-    <script type="text/javascript" src="http://mat1.gtimg.com/app/vt/js/read/import.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/jquery.1.7.2.min.js"></script>
+    <script src="mylab.js"></script>
     <title>前端艺术|实验室</title>
   </head>
 
@@ -15,9 +15,12 @@
         <img id="logo" src="../images/logo.png"></img>
                                    <!-----------------导航栏------>
         <div id="header_nav">
-          <li><a id="navText" href="http://www.juerry.com">首页</a></li>
-          <li><a id="navText" href="../../myOffice.html">实验室</a></li>
-          <li><a id="navText" href="../myblog/index.html">博客</a></li>
+          <div id="drag_ctr"></div>
+          <ul>
+            <li><a id="navtext_0" href="http://www.juerry.com">首页</a></li>
+            <li><a id="navtext_1" href="../../myOffice.html">实验室</a></li>
+            <li><a id="navtext_2" href="../myblog/index.html">博客</a></li>
+          </ul>
         </div>
 
       </div>
@@ -26,7 +29,7 @@
       <div id="content_mylab">
         <div id="left_panel">
           <div style="height:20px;background:#222;margin-top:20px;"></div>
-          <p style="background:#ffaa00;text-align:center;padding:10px;color:#005500;font-size:20px;font-weight:bolder;border-radius:10px;top:20px;margin:5px;">实验分类：</p>
+          <p style="background:#E01B6A;text-align:center;padding:10px;color:#efefef;font-size:20px;font-weight:bolder;border-radius:10px;top:20px;margin:5px;">实验分类：</p>
           <nav>
             <UL>
              <li class="var_nav">
@@ -90,7 +93,7 @@
       </div>
 
       <footer>
-        <p style="font-size:10px;">copyright by 前端艺术</p>
+        <p style="font-size:10px;">Copyright © 2014 前端艺术. All Rights Reserved.</p>
       </footer>
     </div>
     <script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
