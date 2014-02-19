@@ -128,16 +128,17 @@ clear: both;
 footer{
 	margin: 0px;
 	width:100%;
-	height:200px;
-	background:linear-gradient(#33363b,#343a3c,#383a3c,#343a3c);
-    border-top:10px solid #141F1F; 
+	height:100px;
+	/*background:linear-gradient(#33363b,#343a3c,#383a3c,#343a3c);*/
+	background:#33363b;
+    border-top:0.5px solid #aaa; 
 }
 footer #left{
 	display: inline-block;
 	width:30%;
-	height:200px;
+	height:100px;
 	left: 40px;
-	border-right:1.5px dashed #600060;
+	border-right:1px dashed #600060;
 	background: rgba(200,200,200，0.1);
 	position: absolute;
 }
@@ -146,8 +147,8 @@ footer #middle{
 	display: inline-block;
     left: 35%;
 	width:30%;
-	height:200px;
-	border-right:1.5px dashed #600060;
+	height:100px;
+	border-right:1px dashed #600060;
 	background: rgba(200,200,200，0.1);
 }
 footer #right{
@@ -155,7 +156,7 @@ footer #right{
 	display: inline-block;
     right: 40px;
 	width:30%;
-	height:200px;
+	/*height:200px;*/
 	/*border-left:3px dashed #ab1212;*/
 	background: rgba(200,200,200，0.1);
 }
